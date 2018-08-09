@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body ng-app="trends">
+    <div class="main-container" ng-controller="mainController">
+      <h3><label class="label" style="color: #337ab7;">Trends API </label></h3>  
+        <div class="searchContainer">
+            <form name="myForm">
+            <div class="input-w">
+                <!-- <label class="label label-primary">Text</label> -->
+                <input type="text" class="form-control input-sm col-md-6" name="data" ng-model="searchObj" placeholder="Enter the text" required>
+            </div>
+            <button type="button" class="btn btn-primary" ng-disabled="myForm.$invalid" style="margin-left: 4%;" ng-click="filterData(searchObj)">
+                    <span >Download</span>
+            </button>
+            <img ng-show="showLoader" class="loader" src="\img\Spinner.gif">
+            </form>
+           
+        </div>
+    </div>
+
+</body>
+<link rel='stylesheet' href='./common.css' />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src= "./../node_modules/angular/angular.js"></script>
+
+<!-- Controllers & app.js-->
+<script src="./app.js"></script>
+</html>

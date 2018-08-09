@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    height: 100%; 
+    overflow: hidden
+}
+.searchContainer{
+    position: relative;
+    top: 30%;
+    left: 25%;
+}
+.main-container{
+    position: relative;
+    left: auto;
+    left: 25%;
+    height: 50%;
+    margin-top: 10%;
+    padding: 2%;
+    border: 1px solid #41e2f4;
+    /* padding: 10%; */
+    margin-right: 50%;
+
+}
+.input-w{
+    display: inline-block;
+}
+.input-w label, .input-w input {
+    float: none; /* if you had floats before? otherwise inline-block will behave differently */
+    display: inline-block;
+    vertical-align: middle;    
+}
+.loader{
+    height: 60px;
+    width: 60px;
+}
+button:disabled,
+button[disabled]{
+  /* border: 1px solid #999999;
+  background-color: lightblue;
+  color: #ffff; */
+}
